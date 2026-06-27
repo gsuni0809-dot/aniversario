@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz aniversário, meu amor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="hero" aria-labelledby="main-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/images/aniversario-05.jpg" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Hoje é todo seu</p>
+        <h1 id="main-title">Feliz aniversário, meu amor</h1>
+        <p class="lead">
+          Fiz esse cantinho para comemorar você, seu sorriso, seu jeito e tudo que a gente vem vivendo juntos.
+        </p>
+        <div class="hero-actions" aria-label="Ações especiais">
+          <button class="primary-btn" id="surprise-btn" type="button">Abrir surpresa</button>
+          <button class="soft-btn" id="celebrate-btn" type="button">Soltar corações</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="note-strip" aria-label="Mensagem principal">
+      <p id="special-note">
+        Que seu novo ciclo venha leve, lindo e cheio de motivos para sorrir. Eu amo estar do seu lado.
+      </p>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="eyebrow">Nossas lembranças</p>
+        <h2 id="gallery-title">Um pedacinho da nossa história</h2>
+      </div>
+
+      <div class="photo-mosaic">
+        <button class="photo-card featured" type="button" data-photo="assets/images/aniversario-16.jpg" aria-label="Abrir foto de abraço">
+          <img src="assets/images/aniversario-16.jpg" alt="Abraço carinhoso">
+          <span>O abraço que eu guardo comigo</span>
+        </button>
+        <button class="photo-card tall" type="button" data-photo="assets/images/aniversario-02.jpg" aria-label="Abrir foto no parque">
+          <img src="assets/images/aniversario-02.jpg" alt="Nós dois sorrindo no parque">
+          <span>Noite bonita, você mais ainda</span>
+        </button>
+        <button class="photo-card" type="button" data-photo="assets/images/aniversario-14.jpg" aria-label="Abrir selfie sorrindo">
+          <img src="assets/images/aniversario-14.jpg" alt="Selfie sorrindo juntos">
+          <span>Seu sorriso muda tudo</span>
+        </button>
+        <button class="photo-card" type="button" data-photo="assets/images/aniversario-05.jpg" aria-label="Abrir foto na escada iluminada">
+          <img src="assets/images/aniversario-05.jpg" alt="Nós dois em uma escada iluminada">
+          <span>Mãos dadas, caminho bonito</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="birthday-wishes" aria-labelledby="wishes-title">
+      <div class="section-heading">
+        <p class="eyebrow">Desejos para você</p>
+        <h2 id="wishes-title">Que nunca falte</h2>
+        
+      </div>
+
+      <div class="wish-grid">
+        <article class="wish-card">
+          <span>01</span>
+          <h3>Leveza</h3>
+          <p>Que você encontre paz nos dias corridos e carinho nos pequenos detalhes.</p>
+        </article>
+        <article class="wish-card">
+          <span>02</span>
+          <h3>Alegria</h3>
+          <p>Que seu sorriso continue aparecendo fácil, desses que deixam o mundo mais bonito.</p>
+        </article>
+        <article class="wish-card">
+          <span>03</span>
+          <h3>Amor</h3>
+          <p>Que você se sinta amada hoje, amanhã e em todos os dias comuns também.</p>
+        </article>
+      </div>
+      <p><h2>E claro EUUUUUUUUUUU</h2></p>
+    </section>
+
+    <section class="memory-reel" aria-labelledby="reel-title">
+      <div class="section-heading">
+        <p class="eyebrow">Mais fotos nossas</p>
+        <h2 id="reel-title">Um álbum para ir passando devagar</h2>
+      </div>
+      <div class="reel" aria-label="Album horizontal de fotos">
+        <img src="assets/images/aniversario-01.jpg" alt="Selfie juntos">
+        <img src="assets/images/aniversario-03.jpg" alt="Selfie deitados juntos">
+        <img src="assets/images/aniversario-04.jpg" alt="Nós dois sorrindo">
+        <img src="assets/images/aniversario-07.jpg" alt="Careta divertida juntos">
+        <img src="assets/images/aniversario-08.jpg" alt="Foto divertida de perto">
+        <img src="assets/images/aniversario-09.jpg" alt="Selfie sorrindo em arquibancada">
+        <img src="assets/images/aniversario-13.jpg" alt="Beijo ao ar livre">
+        <img src="assets/images/aniversario-15.jpg" alt="Selfie na quadra">
+      </div>
+    </section>
+
+    <section class="letter" aria-labelledby="letter-title">
+      <p class="eyebrow">Uma carta para voce</p>
+      <h2 id="letter-title">Meu presente tambem e promessa</h2>
+      <p>
+        Prometo continuar reparando no brilho dos seus olhos, celebrando suas conquistas e ficando por perto
+        nos dias em que você só precisar de colo. Você é linda por fora, gigante por dentro, e eu sou muito
+        feliz por viver essa história com você. Feliz aniversário, meu amor, mas peraí ainda não acabou, esse e só o inicio, 
+        tem mais presente chegando para você daqui algumas horas, não fica muito ansiosa, eu te amo minha princesa.
+      </p>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Fechar foto">x</button>
+    <img id="lightbox-image" src="" alt="Foto ampliada">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
